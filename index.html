@@ -742,9 +742,9 @@
     <div class="calc-base-selector">
       <p class="base-label">Plan base</p>
       <div class="base-options">
-        <button class="base-btn" id="base-btn-1000" onclick="selectBase(1000,'MH Core')">Starter — $1,000</button>
-        <button class="base-btn" id="base-btn-1500" onclick="selectBase(1500,'MH Totem')">Growth — $1,500</button>
-        <button class="base-btn" id="base-btn-2000" onclick="selectBase(2000,'MH Elite')">Expert — $2,000</button>
+        <button class="base-btn" id="base-btn-1000" onclick="selectBase(1000,'Starter')">Starter — $1,000</button>
+        <button class="base-btn" id="base-btn-1500" onclick="selectBase(1500,'Growth')">Growth — $1,500</button>
+        <button class="base-btn" id="base-btn-2000" onclick="selectBase(2000,'Expert')">Expert — $2,000</button>
       </div>
     </div>
 
@@ -1008,7 +1008,7 @@ document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
 ══════════════════════════════════════ */
 let basePrice = 0, baseName = '';
 const addons = { avatar:0, tecnico:0, totem:0 };
-const prices  = { avatar:200, tecnico:100, totem:150 };
+const prices  = { avatar:75, tecnico:100, totem:150 };
 
 function selectBase(price, name) {
   basePrice = price; baseName = name;
@@ -1042,7 +1042,7 @@ function updateTotal() {
 function requestQuote() {
   if (!basePrice) { alert('Por favor selecciona un plan base primero.'); return; }
   let msg = `¡Hola! Me interesa el plan ${baseName} ($${basePrice}).\n\nAdicionales:\n`;
-  if (addons.avatar  > 0) msg += `- ${addons.avatar} día(s) adicional avatar: $${addons.avatar*200}\n`;
+  if (addons.avatar  > 0) msg += `- ${addons.avatar} día(s) adicional avatar: $${addons.avatar*75}\n`;
   if (addons.tecnico > 0) msg += `- ${addons.tecnico} día(s) personal técnico: $${addons.tecnico*100}\n`;
   if (addons.totem   > 0) msg += `- ${addons.totem} día(s) alquiler totém: $${addons.totem*150}\n`;
   const total = basePrice + addons.avatar*200 + addons.tecnico*100 + addons.totem*150;
