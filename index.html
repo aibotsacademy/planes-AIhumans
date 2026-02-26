@@ -3,15 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta property="og:title"              content="Planes de Metahumanos 🤖 Experiencias IA " />
-<meta property="og:url"                content="https://planes.theaihumans.com" />
-<meta property="og:type"               content="website" />
-<meta property="og:description"        content="Automating Business Process through Digital Humans & Virtual Assistants in-store and online!" />
-<meta name="keywords" content=" Digital Humans, AI, Virtual Humans, Humanoids, NLP, LLMs, Automation, Artificial Intelligence, Future Technology, Robotics,Machine Learning, Natural Language Processing, Augmented Reality, Virtual Reality, Deep Learning, Chatbots, Automation Tools, Human-Like Robots, Conversational AI, Cognitive Computing, Intelligent Automation, Algorithmic Trading, Smart Assistants, Robotic Process Automation, Neural Networks, Sentiment Analysis, Autonomous Systems, Intelligent Agents, Emotion AI, Cognitive Robotics, Speech Recognition, Facial Recognition, Data Science, Internet of Things, Predictive Analytics, Machine Translation, Virtual Assistants, Image Recognition, Data Mining, Automation Technologies, Human-Robot Interaction, Intelligent Chatbots, Automated Decision-Making, Computer Vision, Deep Reinforcement Learning, Neural Language Models, Natural Language Understanding, Automation Solutions, Humanoid Robotics, Smart Automation">
-<meta property="og:image"              content="https://theaihumans.com/img/about-img.jpg" />
-
-  
+<title>Metahumanos — Planes IA</title>
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;400;600;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -682,7 +674,7 @@
   <div class="plans-grid">
     <div class="plan-card fade-in">
       <p class="plan-tier">Nivel 01</p>
-      <h3 class="plan-name">MH Core</h3>
+      <h3 class="plan-name">Starter</h3>
       <div class="plan-price"><sup>$</sup>1,000</div>
       <p class="plan-iva">+ IVA / por evento</p>
       <ul class="plan-features">
@@ -697,7 +689,7 @@
     <div class="plan-card featured fade-in">
       <span class="featured-badge">★ MÁS POPULAR</span>
       <p class="plan-tier">Nivel 02</p>
-      <h3 class="plan-name">MH Totem</h3>
+      <h3 class="plan-name">Growth</h3>
       <div class="plan-price"><sup>$</sup>1,500</div>
       <p class="plan-iva">+ IVA / por evento</p>
       <ul class="plan-features">
@@ -711,7 +703,7 @@
 
     <div class="plan-card premium fade-in">
       <p class="plan-tier">Nivel 03</p>
-      <h3 class="plan-name">MH Elite</h3>
+      <h3 class="plan-name">Expert</h3>
       <div class="plan-price"><sup>$</sup>2,000</div>
       <p class="plan-iva">+ IVA / por evento</p>
       <ul class="plan-features">
@@ -745,9 +737,9 @@
     <div class="calc-base-selector">
       <p class="base-label">Plan base</p>
       <div class="base-options">
-        <button class="base-btn" id="base-btn-1000" onclick="selectBase(1000,'MH Core')">MH Core — $1,000</button>
-        <button class="base-btn" id="base-btn-1500" onclick="selectBase(1500,'MH Totem')">MH Totem — $1,500</button>
-        <button class="base-btn" id="base-btn-2000" onclick="selectBase(2000,'MH Elite')">MH Elite — $2,000</button>
+        <button class="base-btn" id="base-btn-1000" onclick="selectBase(1000,'MH Core')">Starter — $1,000</button>
+        <button class="base-btn" id="base-btn-1500" onclick="selectBase(1500,'MH Totem')">Growth — $1,500</button>
+        <button class="base-btn" id="base-btn-2000" onclick="selectBase(2000,'MH Elite')">Expert — $2,000</button>
       </div>
     </div>
 
@@ -757,7 +749,7 @@
           <div class="addon-name">Día adicional — Mismo Avatar</div>
           <div class="addon-desc">Extiende la presencia del avatar IA un día más en tu evento</div>
         </div>
-        <div class="addon-price-tag">$200 / día</div>
+        <div class="addon-price-tag">$75 / día</div>
         <div class="addon-counter">
           <button class="counter-btn" onclick="change('avatar',-1)">−</button>
           <span class="counter-val" id="avatar-count">0</span>
@@ -1050,7 +1042,7 @@ function requestQuote() {
   if (addons.totem   > 0) msg += `- ${addons.totem} día(s) alquiler totém: $${addons.totem*150}\n`;
   const total = basePrice + addons.avatar*200 + addons.tecnico*100 + addons.totem*150;
   msg += `\nTotal estimado: $${total.toLocaleString()} + IVA`;
-  window.open(`https://wa.me/?text=${encodeURIComponent(msg)}`, '_blank');
+  window.open(`https://wa.me/50660514917?text=${encodeURIComponent(msg)}`, '_blank');
 }
 </script>
 </body>
